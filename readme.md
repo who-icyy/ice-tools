@@ -41,6 +41,13 @@ Below are some of the tools currently available in this repository:
      python imgresizer.py <input_image.jpg> <output_image.jpg> --width <width> --height <height>
 
      ```
+5. **Web Scrapper**
+   - To Scrap Links from Sites
+   - Usage:
+     ```bash
+     python scraplink.py <URL>
+
+     ```
 
 ## Getting Started
 

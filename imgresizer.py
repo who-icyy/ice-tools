@@ -5,13 +5,12 @@ def resize_image(input_path, output_path, width=None, height=None):
     with Image.open(input_path) as img:
         original_width, original_height = img.size
 
-        # Calculate new size preserving the aspect ratio if only one dimension is specified
         if width and not height:
             height = int((width / original_width) * original_height)
         elif height and not width:
             width = int((height / original_height) * original_width)
         elif not width and not height:
-            width, height = original_width, original_height  # If no dimensions specified, keep original size
+            width, height = original_width, original_height  
 
         resized_img = img.resize((width, height), Image.ANTIALIAS)
         resized_img.save(output_path)
