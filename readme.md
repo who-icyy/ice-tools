@@ -29,10 +29,17 @@ Below are some of the tools currently available in this repository:
      ```
 
 3. **File Search**
-   - Description of the tool's purpose.
+   - To Search files in a drive aur folders.
    - Usage:
      ```bash
      python file_search.py </path/to/directory> --name <myfile> --type <txt> --min-size 1000 --max-size 5000 --modified-after 2023-01-01 --modified-before 2023-12-31
+     ```
+4. **Image Resizer**
+   - Resize image as per need.
+   - Usage:
+     ```bash
+     python imgresizer.py <input_image.jpg> <output_image.jpg> --width <width> --height <height>
+
      ```
 
 ## Getting Started
