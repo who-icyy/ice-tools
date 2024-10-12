@@ -1,4 +1,5 @@
 import argparse
+from mrkdown import mrkdownToHTML
 
 def main():
     # Create the parser
@@ -12,10 +13,7 @@ def main():
     # Parse the arguments
     args = parser.parse_args()
 
-    if args.output : print("out")
-    
-    # Print the greeting
-    print(f"Hello, {args.path}!")
+        
 
 if __name__ == '__main__':
     main()
