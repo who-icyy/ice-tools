@@ -11,12 +11,6 @@ def main():
     # Parse the arguments
     args = parser.parse_args()
 
-    
-    try:
-        mrkdownToHTML(args.path,args.output+".html")
-    except:
-        print("Unable to read your file.")
-    
 
 
         
